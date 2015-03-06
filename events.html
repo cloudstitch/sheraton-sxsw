@@ -91,6 +91,7 @@
               $('#nonetheretomorrow').hide();                
               $.each($('.event'), function(idx, e) {
                 e = $(e);
+                console.log(e.attr('data-date'), dm, dmy);
                 if ((e.attr('data-date') == dm) || (e.attr('data-date') == dmy)) {
                   e.show();
                   i++;
