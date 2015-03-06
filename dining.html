@@ -78,19 +78,19 @@
                     <!--START POST-TITLE-->
                     <div class="post-title">        
                         <h2 class="title" style="margin-bottom:0px" connect="Dining!col(Name)"></h2>
-                        <p><i connect="Restaurants!col(Type)"></i>
-                        <span class="cost" connect="Restaurants!col(ExpenseRating)" show-if="Restaurants!col(ExpenseRating)"></span>
+                        <p><i connect="Dining!col(Type)"></i>
+                        <span class="cost" connect="Dining!col(ExpenseRating)" show-if="Dining!col(ExpenseRating)"></span>
                         </p>
 
                     </div>
                     <div class="post-content">  
-                      <p connect="Restaurants!col(Description)"></p>                    
+                      <p connect="Dining!col(Description)"></p>                    
                     </div>
                     <p align="left">
-                        <a data-cts='this :if-exist sheet|Restaurants!col(Phone); this {"attribute": "href", "prefix": "tel:"} :is sheet|Restaurants!col(Phone);' class="btn btn-sm btn-success action" href="#"><i class="fa fa-phone"></i> &nbsp; Call</a>
-                        <a data-cts='this :if-exist sheet|Restaurants!col(Address); this {"attribute": "href", "prefix": "https://www.google.com/maps/place/"} :is sheet|Restaurants!col(Address);' class="btn btn-sm btn-success action"><i class="fa fa-map-marker"></i> &nbsp; Map</a>
-                        <a show-if="Restaurants!col(ReviewsLink)" connect-href="Restaurants!col(ReviewsLink)" class="btn btn-sm btn-success action"><i class="fa fa-cutlery"></i> &nbsp; Reviews</a>
-                        <a show-if="Restaurants!col(MenuLink)" connect-href="Restaurants!col(MenuLink)" class="btn btn-sm btn-success action" ><i class="fa fa-bars"></i> &nbsp; Menu</a>
+                        <a data-cts='this :if-exist sheet|Dining!col(Phone); this {"attribute": "href", "prefix": "tel:"} :is sheet|Dining!col(Phone);' class="btn btn-sm btn-success action" href="#"><i class="fa fa-phone"></i> &nbsp; Call</a>
+                        <a data-cts='this :if-exist sheet|Dining!col(Address); this {"attribute": "href", "prefix": "https://www.google.com/maps/place/"} :is sheet|Dining!col(Address);' class="btn btn-sm btn-success action"><i class="fa fa-map-marker"></i> &nbsp; Map</a>
+                        <a show-if="Dining!col(ReviewsLink)" connect-href="Dining!col(ReviewsLink)" class="btn btn-sm btn-success action"><i class="fa fa-cutlery"></i> &nbsp; Reviews</a>
+                        <a show-if="Dining!col(MenuLink)" connect-href="Dining!col(MenuLink)" class="btn btn-sm btn-success action" ><i class="fa fa-bars"></i> &nbsp; Menu</a>
                     </p>
                  </div>
                 </div>
