@@ -19,3 +19,23 @@ a.action {
 .cost {
     margin-left: 15px;
 }
+
+.cs-footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.cs-footer a {
+  text-decoration: none;
+}
+
+.cs-footer a img {
+  border: none;
+}
+
+body.sm-logo {
+  background-image: url(images/logo-sm-tr.png);
+  background-repeat: no-repeat;
+  background-size: 104px 70px;
+  background-position: top right;
+}
