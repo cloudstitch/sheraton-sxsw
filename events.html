@@ -80,8 +80,12 @@
 
             <script>
             var today = new Date();
-            var dm = today.getDay() + '/' + today.getMonth();
-            var dmy = today.getDay() + '/' + today.getMonth() + '/' + today.getYear();
+            var day = today.getDay() + 1;
+            var month = today.getMonth() + 1;
+            var year = today.getFullYear();
+            var dm = month + '/' + day;
+            var dmy = month + '/' + day + '/' + year;
+            
 
             function showToday() {
               $('.showToday').css('font-weight', 'bold');
@@ -91,6 +95,7 @@
               $('#nonetheretomorrow').hide();                
               $.each($('.event'), function(idx, e) {
                 e = $(e);
+                console.log(e.attr('data-date'), dm, dmy);
                 if ((e.attr('data-date') == dm) || (e.attr('data-date') == dmy)) {
                   e.show();
                   i++;
